@@ -1,8 +1,6 @@
-<h1>Listing listings</h1>
-
 <div class="row">
   <% @listings.each do |listing| %>
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div class="thumbnail">
         <%= image_tag listing.image.url(:medium) %>
         <div class="caption">
