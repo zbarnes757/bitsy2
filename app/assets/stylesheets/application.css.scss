@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+	background-image: url('https://www.dropbox.com/s/z85v33ilj3gzqwq/seamless_paper_texture.png?raw=1')
+}
+
 .center, .thumbnail {
 	text-align: center;
 }
