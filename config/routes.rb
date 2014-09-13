@@ -2,7 +2,7 @@ Bitsy2::Application.routes.draw do
 
   devise_for :users
   resources :listings do
-    resources :orders
+    resources :orders, only: [:new, :create]
   end
 
 
@@ -11,6 +11,8 @@ Bitsy2::Application.routes.draw do
   get "pages/contact"
   get "pages/faq"
   get 'seller' => "listings#seller"
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
 
   root "listings#index"
 
